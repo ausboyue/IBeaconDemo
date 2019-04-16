@@ -1,7 +1,5 @@
 package cn.icheny.ibeacon.demo;
 
-
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -48,7 +46,6 @@ public class NearbyScanActivity extends Activity {
 
     }
 
-    @SuppressLint("NewApi")
     @Override
     protected void onResume() {
         super.onResume();
@@ -66,7 +63,6 @@ public class NearbyScanActivity extends Activity {
     }
 
     // iBeacon设备扫描回调结果
-    @SuppressLint("NewApi")
     private BluetoothAdapter.LeScanCallback mLeScanCallback = new BluetoothAdapter.LeScanCallback() {
 
         @Override
