@@ -82,6 +82,8 @@ public class NearbyScanActivity extends Activity {
 
     /**
      * 模拟根据ibeacon信息从后台取对应商品据信息
+     * 这里面的uuid，major，minor 都是我这边的iBeacon设备
+     * 你可以填你自己的iBeacon设备相关信息，进行iBeacon设备过滤
      *
      * @param ibeacon
      * @return
