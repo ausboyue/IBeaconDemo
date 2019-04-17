@@ -66,9 +66,9 @@ public class IBeaconProductor {
         beacon.rssi = rssi;
 
         // 格式化UUID
-        byte[] proximityUuidBytes = new byte[16];
-        System.arraycopy(scanData, startByte + 4, proximityUuidBytes, 0, 16);
-        String hexString = bytesToHexString(proximityUuidBytes);
+        byte[] uuidBytes = new byte[16];
+        System.arraycopy(scanData, startByte + 4, uuidBytes, 0, 16);
+        String hexString = bytesToHexString(uuidBytes);
         StringBuilder sb = new StringBuilder();
         sb.append(hexString.substring(0, 8));
         sb.append("-");
